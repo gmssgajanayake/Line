@@ -53,6 +53,14 @@ public class Line {
     }
 
     public boolean isSquare(Line anotherLine1, Line anotherLine2, Line anotherLine3) {
+
+        if (
+                anotherLine1.getLength() != getLength() || anotherLine2.getLength() != getLength() ||
+                        anotherLine3.getLength() != getLength() || getLength() == 0 || anotherLine1.getLength() == 0 ||
+                        anotherLine2.getLength() == 0 || anotherLine3.getLength() == 0
+        )
+            return false;
+
         Point[][] points = {{point1, point2}, {anotherLine1.getPoint1(), anotherLine1.getPoint2()},
                 {anotherLine2.getPoint1(), anotherLine2.getPoint2()}, {anotherLine3.getPoint1(), anotherLine3.getPoint2()}};
         L1:

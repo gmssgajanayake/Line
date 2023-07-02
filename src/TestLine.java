@@ -13,7 +13,7 @@ public class TestLine {
         System.out.println("\n*** Equations of lines ***");
         System.out.println(line1.getEquation());
         System.out.println(line2.getEquation());
-        System.out.println("\nIs it square shape? " +
+        System.out.println("\nIs that square shape? " +
                 (line1.isSquare(
                         new Line(new Point(4, 4), new Point(4, 6)),
                         new Line(new Point(4, 6), new Point(2, 6)),
